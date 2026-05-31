@@ -1,0 +1,54 @@
+// ════════════════════════════════════════════════════════════
+//  推荐阅读设置 —— 复制进你的 VSCode settings.json
+//  (建议为读书单独建一个 Profile，再把这些放进去，不影响你写代码)
+//  把 <你的路径> 换成你放这套文件的绝对路径，例如：
+//    file:///c:/Users/you/mucha-reader/theme.css
+// ════════════════════════════════════════════════════════════
+{
+    // —— Custom CSS / JS 注入（核心）——
+    "vscode_custom_css.imports": [
+        "file:///<你的路径>/theme.css",
+        "file:///<你的路径>/icons-data.js",
+        "file:///<你的路径>/chapters.js",        // 可选：你的章节目录
+        "file:///<你的路径>/widgets/emblem.js",  // 可选：狐玫纹章浮窗
+        "file:///<你的路径>/dashboard.js"         // 注意：dashboard 放最后
+    ],
+
+    // —— 书页排版 ——
+    "editor.fontFamily": "'Noto Serif SC', 'LXGW WenKai', serif",
+    "editor.fontSize": 18,
+    "editor.lineHeight": 32,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 92,
+    "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "none",
+    "editor.padding.top": 28,
+    "editor.padding.bottom": 28,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "files.autoGuessEncoding": true,
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": "none",
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.colorTheme": "Dark Modern",
+
+    // —— kimi-room「night」描金配色 ——
+    "workbench.colorCustomizations": {
+        "editor.background": "#0c0c0c",
+        "editor.foreground": "#d8d0c8",
+        "editorCursor.foreground": "#c4a060",
+        "editor.selectionBackground": "#c19a5633",
+        "sideBar.background": "#090909",
+        "sideBarTitle.foreground": "#c19a56",
+        "activityBar.background": "#090909",
+        "activityBar.foreground": "#c19a56",
+        "titleBar.activeBackground": "#0a0a0a",
+        "titleBar.activeForeground": "#c19a56",
+        "tab.activeForeground": "#f3e6cd",
+        "scrollbarSlider.background": "#c19a5533",
+        "button.background": "#b8814a",
+        "focusBorder": "#c19a5666"
+    }
+}

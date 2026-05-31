@@ -1,0 +1,128 @@
+/* ════════════════════════════════════════════════
+   kimi-room「night」skin · VSCode 看书 · v2 花哨
+   gold leaf on near-black · art nouveau
+   #0c0c0c base · #d8d0c8 ink · #c19a56 / #b8814a gold
+   ════════════════════════════════════════════════ */
+
+/* —— 整窗 chrome 字体 → Cormorant + 宋体兜底 CJK ——
+   （不碰编辑器正文：.monaco-editor 仍用 settings 里的宋体）*/
+.monaco-workbench .part.titlebar,
+.monaco-workbench .part.sidebar,
+.monaco-workbench .part.auxiliarybar,
+.monaco-workbench .part.panel,
+.monaco-workbench .pane-header,
+.monaco-workbench .monaco-menu,
+.monaco-workbench .composite.title,
+.quick-input-widget {
+  font-family: 'Cormorant Garamond', 'Noto Serif SC', Georgia, serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* —— 暖夜近黑底 + 极淡金晕 —— */
+.monaco-workbench {
+  background: radial-gradient(125% 100% at 50% 0%, #16120c 0%, #0c0c0c 52%, #070605 100%) !important;
+}
+.monaco-workbench .part.editor > .content { background: transparent !important; }
+
+/* —— 角落金马赛克（呼应 room 四角）—— */
+.monaco-workbench::before,
+.monaco-workbench::after {
+  content: ""; position: fixed; top: 4px; width: 46px; height: 46px;
+  z-index: 40; pointer-events: none; opacity: 0.9;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46'%3E%3Cg fill='%23c19a56'%3E%3Crect x='2' y='2' width='7' height='7' opacity='.7'/%3E%3Crect x='13' y='2' width='7' height='7' opacity='.32'/%3E%3Crect x='24' y='2' width='7' height='7' opacity='.18'/%3E%3Crect x='2' y='13' width='7' height='7' opacity='.32'/%3E%3Crect x='13' y='13' width='7' height='7' opacity='.5'/%3E%3Crect x='2' y='24' width='7' height='7' opacity='.18'/%3E%3C/g%3E%3C/svg%3E") no-repeat;
+}
+.monaco-workbench::before { left: 4px; }
+.monaco-workbench::after  { right: 4px; transform: scaleX(-1); }
+
+/* —— 窗内 logo → 金色双环 emblem —— */
+.monaco-workbench .part.titlebar .window-appicon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23c19a56' stroke-width='1.7'%3E%3Ccircle cx='20' cy='24' r='10.5'/%3E%3Ccircle cx='28' cy='24' r='10.5'/%3E%3Ccircle cx='24' cy='24' r='1.7' fill='%23c4a060' stroke='none'/%3E%3C/svg%3E") !important;
+  background-size: 18px 18px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.monaco-workbench .part.titlebar .window-appicon::before,
+.monaco-workbench .part.titlebar .window-appicon .codicon { opacity: 0 !important; }
+
+/* —— 顶栏：近黑 + 金字 + 金细线 —— */
+.monaco-workbench .part.titlebar,
+.monaco-workbench .part.titlebar .titlebar-container {
+  background: #0a0a0a !important;
+  border-bottom: 1px solid #c19a5540 !important;
+}
+.monaco-workbench .part.titlebar .window-title,
+.monaco-workbench .part.titlebar .menubar-menu-button,
+.monaco-workbench .part.titlebar .action-item .codicon {
+  color: #c19a56 !important;
+}
+.monaco-workbench .part.titlebar .menubar-menu-button:hover,
+.monaco-workbench .part.titlebar .action-item:hover { background: #c19a551f !important; }
+
+/* —— 书页：金细框 + 圆角 + 微浮 + 四角金花括 —— */
+.monaco-workbench .part.editor .editor-group-container > .editor-container { position: relative !important; }
+.editor-instance .monaco-editor {
+  border-radius: 11px !important;
+  box-shadow: 0 0 0 1px #c19a5538, 0 16px 50px -18px #000000bb !important;
+}
+.monaco-workbench .part.editor .editor-container::before,
+.monaco-workbench .part.editor .editor-container::after {
+  content: ""; position: absolute; width: 26px; height: 26px; z-index: 6; pointer-events: none;
+  border: 1.4px solid #c19a5577;
+}
+.monaco-workbench .part.editor .editor-container::before {
+  top: 10px; left: 10px; border-right: 0; border-bottom: 0; border-top-left-radius: 7px;
+}
+.monaco-workbench .part.editor .editor-container::after {
+  bottom: 10px; right: 10px; border-left: 0; border-top: 0; border-bottom-right-radius: 7px;
+}
+
+/* —— 侧栏 / 次级侧栏（CC）段标题：大写描金 + 金下划线 —— */
+.monaco-workbench .pane-header .title,
+.monaco-workbench .composite.title > .title-label,
+.monaco-workbench .pane-header {
+  color: #c19a56 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.16em !important;
+}
+.monaco-workbench .pane-header {
+  border-bottom: 1px solid #c19a5530 !important;
+}
+
+/* —— 滚动条：金 —— */
+.monaco-scrollable-element > .scrollbar > .slider {
+  border-radius: 8px !important;
+  background: linear-gradient(180deg, #c19a5566, #b8814a44) !important;
+}
+.monaco-scrollable-element > .scrollbar > .slider:hover {
+  background: linear-gradient(180deg, #c4a060aa, #b8814a77) !important;
+}
+
+/* ════ v2.1 · 图标和谐描金 + 丝滑 + 收一点花哨 ════ */
+/* 默认蓝/灰图标 → 描金，去不和谐 */
+.monaco-workbench .codicon { color: #c19a56 !important; }
+.monaco-workbench .codicon:hover { color: #c4a060 !important; }
+/* 丝滑过渡 */
+.monaco-workbench .action-item,
+.monaco-workbench .pane-header,
+.monaco-workbench .monaco-list-row,
+.monaco-workbench .codicon,
+.monaco-scrollable-element > .scrollbar > .slider {
+  transition: color .18s ease, background-color .18s ease, opacity .18s ease !important;
+}
+/* 角落马赛克 + 书页花角：收淡、收细，更滑 */
+.monaco-workbench::before,
+.monaco-workbench::after { opacity: 0.5 !important; }
+.monaco-workbench .part.editor .editor-container::before,
+.monaco-workbench .part.editor .editor-container::after {
+  border-width: 1px !important; border-color: #c19a5544 !important;
+  width: 20px !important; height: 20px !important;
+}
+
+/* ════ 隐藏书页顶部的文件名/路径条（tab 头 + 面包屑）→ 书页贴顶 ════ */
+.monaco-workbench .part.editor .editor-group-container > .title { display: none !important; }
+.monaco-workbench .part.editor .editor-group-container > .editor-container {
+  top: 0 !important; height: 100% !important;
+}
+.monaco-workbench .breadcrumbs-below-tabs,
+.monaco-workbench .monaco-breadcrumbs { display: none !important; }

@@ -1,0 +1,10 @@
+# 你自己的书 / 私人数据，别提交
+novel-data.js
+chapters.js
+my-*.txt
+*.private.*
+
+# OS / 编辑器
+.DS_Store
+Thumbs.db
+.vscode/
