@@ -8,3 +8,4 @@ my-*.txt
 .DS_Store
 Thumbs.db
 .vscode/
+_HANDOFF.md
