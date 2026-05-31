@@ -68,7 +68,7 @@
 ## ⚠️ 说明
 
 - 本仓库**不含任何小说正文 / 受版权保护的章节目录**——示例目录与示例文本均为占位，请放你自己合法持有的书。
-- 电台为第三方公开流，可用性不保证；地区性台偶尔会换地址。
+- 电台为第三方公开流（SomaFM / 1.FM / RauteMusik / Venice Classic 等），可用性不保证、可能随时变更；请遵循各服务的使用条款。失效就在 `dashboard.js` 的 `STATIONS` 里换源。
 - 注入式主题会修改 VSCode 的 `workbench.html`（由 Custom CSS 扩展完成）；VSCode 升级后可能需要重新 **Enable Custom CSS and JS**。
 
 ---

@@ -362,10 +362,11 @@ function mount(){
       {n:'The Trip',     g:'trance · downtempo', u:'https://ice1.somafm.com/thetrip-128-mp3'},
       {n:'Drone Zone',   g:'清冷 · ambient',     u:'https://ice1.somafm.com/dronezone-128-mp3'},
       {n:'RauteMusik', g:'trance · 电子',       u:'https://rautemusik-de-hz-fal-stream14.radiohost.de/trance'},
-      {n:'Venice Classic', g:'古典 · classical', u:'https://uk2.streamingpulse.com/ssl/vcr1'},
-      {n:'Calm Classical', g:'古典 · 静谧',      u:'https://streams.calmradio.com/api/39/128/stream'},
-      {n:'青espresso 古风', g:'古风 · 国风',      u:'https://lhttp.qingting.fm/live/4915/64k.mp3'},
-      {n:'Pop Radio TW', g:'华语 · C-pop',       u:'https://stream.rcs.revma.com/aw9uqyxy2tzuv'}
+      {n:'Venice Classic', g:'古典 · classical', u:'https://uk2.streamingpulse.com/ssl/vcr1'}
+      // —— 想加更多台，照上面格式加行即可。例如古风/华语/古典，
+      //    用你自己找的「官方公开」流地址（别用扒来的内部/带 token 地址，
+      //    那类容易失效、也可能违反对方服务条款）：
+      // ,{n:'我的台', g:'风格', u:'https://example.com/stream.mp3'}
     ];
     var disc=radio.querySelector('.kd-vinyl'),btn=radio.querySelector('.kr-play'),nameEl=radio.querySelector('.kr-name'),genreEl=radio.querySelector('.kr-genre'),tEl=radio.querySelectorAll('.rd-time span'),prev=radio.querySelector('.kr-prev'),next=radio.querySelector('.kr-next');
     var idx=0;try{var s=parseInt(localStorage.getItem('kimiRadioStation'),10);if(s>=0&&s<STATIONS.length)idx=s;}catch(e){}
