@@ -6,7 +6,13 @@
 > 这是一套 **VSCode 注入主题**（Custom CSS/JS），不是扩展商店里的 color theme。
 > 纯前端、零构建：几个 `.css` / `.js` 文件 + 几行 settings 即可。
 
-![screenshot](docs/screenshot.png) <!-- 放一张你自己的截图 -->
+![描金读书房 · 整体](docs/screenshot.png)
+
+<p align="center">
+  <img src="docs/dashboard.png" width="44%" alt="描金仪表盘 · 目录 / 进度 / 钉记 / 心绪 / 印记" />
+  &nbsp;&nbsp;
+  <img src="docs/radio.png" width="44%" alt="电台浮窗 + 右侧 AI 助手位" />
+</p>
 
 ---
 
