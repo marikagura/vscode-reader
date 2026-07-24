@@ -1,6 +1,6 @@
 # 🌙 VSCode Reader · 描金阅读
 
-把 VSCode 变成一间 **kimi** 风格的读书房——拿来读小说、读长文、读 Markdown。
+把 VSCode 变成一间 **kimi-to** 风格的读书房——拿来读小说、读长文、读 Markdown。
 近黑底 + 金线浮雕，左侧是可拖动、可折叠的描金仪表盘（目录 / 进度 / 钉记 / 提醒 / 印记 / 电台），中间是书页，右边留给你的 AI 助手。
 
 > 这是一套 **VSCode 注入主题**（Custom CSS/JS），不是扩展商店里的 color theme。
